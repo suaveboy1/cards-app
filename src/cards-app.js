@@ -1,4 +1,6 @@
 import { LitElement, html, css } from 'lit';
+import "@lrnwebcomponents/meme-maker/meme-maker.js";
+
 
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
@@ -57,6 +59,10 @@ class CardsApp extends LitElement {
 
   render() {
     return html`
+    <meme-maker alt="Cat stalking a small toy" image-url="https://cdn2.thecatapi.com/images/9j5.jpg" top-text="I bring you" bottom-text="the death">
+</meme-maker>
+
+
       <main>
         <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.header}</h1>
